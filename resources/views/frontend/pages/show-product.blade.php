@@ -6,7 +6,7 @@
             <!-- Product Image -->
             <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
                 <div class="product-image">
-                    <img src="{{ asset('backend/uploads/product/' . $product->productphoto) }}" class="img-fluid rounded shadow-sm" alt="{{ $product->productname }}">
+                    <img src="{{ asset('backend/uploads/laptop/' . $product->productphoto) }}" class="img-fluid rounded shadow-sm" alt="{{ $product->productname }}">
                 </div>
             </div>
 

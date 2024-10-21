@@ -5,13 +5,13 @@
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="mb-0">Dashboard</h3>
+                            <h3 class="mb-0">Laptop</h3>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    Dashboard
+                                    Laptop
                                 </li>
                             </ol>
                         </div>
@@ -28,7 +28,7 @@
           @endif
 
 
-  <form action="{{url('storeproduct')}}" method="post" enctype="multipart/form-data">
+  <form action="{{url('store')}}" method="post" enctype="multipart/form-data">
     @csrf
     
     <div class="mb-3 mt-3">

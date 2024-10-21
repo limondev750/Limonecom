@@ -19,8 +19,13 @@
                 </div> <!--end::Container-->
             </div> <!--end::App Content Header--> <!--begin::App Content-->
            <h2 style="text-align:center">Add Product</h2>
+           @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+          @endif
            
-  <form action="{{url('updateproduct',$product->id)}}" method="post" enctype="multipart/form-data">
+  <form action="{{url('update',$product->id)}}" method="post" enctype="multipart/form-data">
     @csrf @method('put')
     
     <div class="mb-3 mt-3">

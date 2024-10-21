@@ -5,13 +5,13 @@
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="mb-0">Dashboard</h3>
+                            <h3 class="mb-0">Laptop</h3>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    Dashboard
+                                    Laptop
                                 </li>
                             </ol>
                         </div>
@@ -44,9 +44,9 @@
                        <td>{{$product->id}}</td>
                        <td>{{$product->productname}}</td>
                        <td>{{$product->productcetagory}}</td>
-                       <td>{{$product->productprice}}</td>
+                       <td>$ {{$product->productprice}}</td>
                        <td>{{$product->productdescription}}</td>
-                       <td><img src="{{asset('backend/uploads/product/'.$product->productphoto)}}" height="100" width="100"></td>
+                       <td><img src="{{asset('backend/uploads/laptop/'.$product->productphoto)}}" height="100" width="100"></td>
                        <td>
                            <a href="{{url('editproduct/'.$product->id)}}" class="btn btn-primary">Edit</a>
                            <form action="{{url('deleteproduct',$product->id)}}" method="POST" style="background-color:transparent; width:auto;">
